@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+.wavy {
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    animation: animWavy 3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animWavy {
+    0% {
+        transform: translateY(70px);
+    }
+    20% {
+        transform: translateY(-70px);
+    }
+    40%, 100% {
+        transform: translateY(70px);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .wavy span {
+        font-size: 1.6em;
+        white-space: pre-wrap;
+        -webkit-box-reflect: below -6px linear-gradient(transparent, rgba(0, 0, 0, 0.041));
+    }
+
+    .wavy {
+        text-align: center;
+    }
+}
