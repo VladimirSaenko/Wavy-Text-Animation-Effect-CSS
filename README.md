@@ -1,7 +1,6 @@
 # Wavy-Text-Animation-Effect-CSS
 
-## Анимация волны текста на CSS 
-## Text Wave Animation with CSS
+## Анимация текста на CSS 
 
 ## Codepen: https://codepen.io/vladimirsaenko/pen/bGoRVKM
 
